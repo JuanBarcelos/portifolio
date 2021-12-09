@@ -1,0 +1,365 @@
+:root{
+ --title: #3A394B;
+ --subTitle: #585664;
+ --btn-color: #3A394B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--title)
+}
+/*----------css do header--------*/
+header{
+    max-height: 10vh;
+    background-color: #ffff;
+    min-width: 375px;
+}
+.container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-header #logo{
+    margin-left:1.37rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.container-header #menu{
+    margin-right:1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.topNavBar{
+   display: none;
+}
+.navbar-visible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:5rem;
+}
+.topNavBar .navbar{
+    margin-right: 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight:regular;
+    font-size: 18px;
+    text-decoration: none;
+    color: #3A394B;
+}
+.topNavBar .navbar:hover{
+    color: #767676;
+}
+/*---------css da homepage----------*/
+#home{
+    min-width: 375px;
+    background-image: url("../img/Background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+}
+.content-home{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-home h2{
+    font-family: 'DM Sans', sans-serif;
+    font-weight:normal;
+    font-size: 16px;
+    color: var(--subTitle);
+}
+.btl-projeto{
+    width: 13.6rem;
+    height: 3.1rem;
+    margin-top: 1rem;
+    background-color: var(--btn-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btl-projeto a{
+    text-decoration: none;
+    color: #F9F9F9;
+    font-family: 'DM Sans', sans-serif;
+    font-weight:medium;
+    font-size: 16px;
+}
+/*--------- about ---------------- */
+#about {
+    min-height:800px;
+    min-width: 375px;
+    background-color: #585664;
+}
+.content-about{
+    text-align: center;
+}
+.content-about img{ 
+    
+    padding-top: 1.3rem;
+    
+}
+.content-about h1{
+    text-align: left;
+    padding-top: 1.5rem;
+    margin-left: 2.5rem;
+    margin-bottom: 2.43rem;
+}
+.content-about p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: regular;
+    text-align: left;
+    text-decoration: justify;
+    color: #ffff;
+    margin-left: 2.5rem;
+    margin-bottom: 4.25rem;
+    margin-right: 1.5rem;
+}
+/*--------- projetos ------- */
+#projetos {
+    height: 100vh;
+    min-width: 375px;
+    background-color: #f9f9f9
+}
+
+.content-project h1{
+    padding-top: 2.5rem;
+    margin-left: 2.5rem;
+    margin-bottom: 2.43rem;
+}
+.content-project p{
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: justify;
+    font-size: 18px;
+    font-weight: regular;
+    color: #3A394A;
+    margin-left: 2.5rem;
+    margin-bottom: 4.25rem;
+    margin-right: 1.5rem;
+}
+
+.projects h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3A394B;
+}
+.about-project{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-bottom: 2.95rem;
+}
+.projects{
+    text-align: center;
+    cursor: pointer;
+}
+.projects:hover{
+    transition: 0.5s;
+    transform: translate(0,10px);
+    text-align: center;
+}
+/*--------- contato ------- */
+#contato{
+    min-height: 800px;
+    min-width: 375px;
+    background-color: #D9D9DD;
+    align-items: center;
+}
+.content-contato h1{
+    padding-top: 1.5rem;
+    margin-left: 2.5rem;
+    margin-bottom: 2.43rem;
+}
+.content-contato p{
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: justify;
+    font-size: 18px;
+    font-weight: regular;
+    margin-left: 2.5rem;
+    margin-bottom: 4.25rem;
+    margin-right: 1.5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.inputs-box{
+    margin: 0 auto;
+    padding-left: 1rem;
+    display: flex;
+    margin-bottom: 2rem;
+    background-color: #3A394B;
+}
+.inputs-box img{
+    background-color: #3A394B;
+    margin-right: 0.5rem;
+}
+.input-text input{
+    height: 2.5rem;
+    width: 16rem;
+    background-color: #3A394B;
+    font-family: 'DM Sans', sans-serif;
+    color: #ffff;
+    font-size: 16px;
+    border: 0;
+}
+.input-text textarea{
+    width: 19.5rem;
+    background-color: #3A394B;
+    font-family: 'DM Sans', sans-serif;
+    color: #ffff;
+    font-size: 16px;
+    border: 0;
+}
+.input-text input::placeholder{
+    color: #ffff
+}
+.input-text input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.input-text textarea:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.input-text textarea::placeholder{
+    color: #ffff
+}
+.content-contato .btl-projeto{
+   margin: 0 auto;
+   border-radius: 50px;
+}
+/*--------- footer ------- */
+#footer{
+background-color: #ffff;
+min-height: 280px;
+min-width: 350px;
+}
+
+#footer h1{
+    padding-top: 1.5rem;
+    margin-left: 2.5rem;
+    margin-bottom: 2.43rem;
+}
+#footer p{
+    font-family: 'DM Sans', sans-serif;
+    color: #767676;
+    font-size: 16px;
+    margin-left: 2.5rem;
+    margin-right: 1.5rem;
+}
+#footer .rede-social{
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    display: flex;
+}
+.rede-social div{
+    margin-right: 1.5rem;
+}
+
+
+/*--------- responsive ------- */
+@media screen and (min-width: 600px){
+/*----------css do header--------*/
+#menu{
+    display: none;
+}
+.topNavBar{
+    display: block;
+ }
+/*---------css da homepage----------*/
+#home{
+    background-image: url("../img/home.svg");
+    background-origin: border-box;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 18px;
+}
+p{
+    font-size: 18px;
+}
+/*--------- about ---------------- */
+.content-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.content-about img{
+    width: 36.8rem;
+    height: 38.18rem;
+    margin-left: 6.6rem;
+    margin-top: 77px;
+    margin-bottom: 78px;
+}
+.content-about .about-info{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 106px;
+    margin-left: 24px;
+}
+/*--------- projetos ------- */
+.about-project{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.projects img{
+    width: 420px;
+    height: 290px;
+}
+.projects h2{
+    font-size: 25px;
+}
+.content-project{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/*--------- contato ------- */
+.content-contato{
+    padding-top: 190px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid:
+        'texto forms'
+        'btn forms'
+    ;
+    grid-gap: 10px;
+}
+.about-contato{
+    margin-right: auto;
+    margin-left: auto;
+    grid-area: texto;
+}
+.about-form{
+    grid-area: forms;
+}
+.btl-projeto{
+    width: 300px;
+    grid-area: btn;
+}
+.input-text input{
+    width: 587px;
+}
+.input-text textarea{
+    width: 630px;
+    height: 300px;
+}
+}
